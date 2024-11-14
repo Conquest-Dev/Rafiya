@@ -2,9 +2,10 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicPageLayout,
-  DefaultPageLayoutProps
-} from "./plasmic/super_admin_dashboard/PlasmicPageLayout";
+  PlasmicSatistic,
+  DefaultSatisticProps
+} from "./plasmic/super_admin_dashboard/PlasmicSatistic";
+import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can
@@ -13,31 +14,32 @@ import {
 // If you don't want to expose certain variants or slots as a prop, you can use
 // Omit to hide them:
 //
-// interface PageLayoutProps extends Omit<DefaultPageLayoutProps, "hideProps1"|"hideProp2"> {
+// interface SatisticProps extends Omit<DefaultSatisticProps, "hideProps1"|"hideProp2"> {
 //   // etc.
 // }
 //
-// You can also stop extending from DefaultPageLayoutProps altogether and have
+// You can also stop extending from DefaultSatisticProps altogether and have
 // total control over the props for your component.
-export interface PageLayoutProps extends DefaultPageLayoutProps {}
+export interface SatisticProps extends DefaultSatisticProps {}
 
-function PageLayout(props: PageLayoutProps) {
-  // Use PlasmicPageLayout to render this component as it was
+function Satistic_(props: SatisticProps, ref: HTMLElementRefOf<"div">) {
+  // Use PlasmicSatistic to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicPageLayout are:
+  // Props you can pass into PlasmicSatistic are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, we are just piping all PageLayoutProps here, but feel free
+  // By default, we are just piping all SatisticProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicPageLayout {...props} />;
+  return <PlasmicSatistic root={{ ref }} {...props} />;
 }
 
-export default PageLayout;
+const Satistic = React.forwardRef(Satistic_);
+export default Satistic;

@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -41,7 +41,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "jkU633o1Cz7HrJdwdxhVHk",
@@ -95,7 +96,8 @@
           }
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "kS7YGZfVr6mU43XDQjXELc",
@@ -117,7 +119,8 @@
           "componentImportPath": "@plasmicpkgs/react-chartjs-2"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ohDidvG9XsCeFumugENU3J",
@@ -517,7 +520,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "ugM6rmprqae5FXqemuYpLm",
@@ -762,6 +766,238 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
       ],
+      "customFunctions": [],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "YUiM7yqBWAqsh8KSnrdj7",
+      "projectApiToken": "yLKpJOE8mD6HqoNCSWF3Em8ut0LBzL7qb3QPqNeOLPjQsSBSc12yhYovnSRSekzgt1xjjbugBGDjOMLGMK4w",
+      "projectName": "plasmic-query",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_query/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "ae7V86eNoXA",
+          "name": "DataFetcher",
+          "displayName": "hostless-plasmic-query-data-fetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        },
+        {
+          "id": "0DrxdjD45dkx",
+          "name": "GraphqlFetcher",
+          "displayName": "hostless-plasmic-query-graphql-fetcher",
+          "componentImportPath": "@plasmicpkgs/plasmic-query"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "5Wyypaj28HpFwgqusnxkCW",
+      "projectApiToken": "iTL7Oo1omz8MWwCi61w0ZJVwJC3BAglg5frXkcjeEr9LISF2GYVk0lIXfoH5uFTM2rbctc40V7KGd1NkftfzIg",
+      "projectName": "SuperAdmin Dashboard",
+      "version": "latest",
+      "cssFilePath": "plasmic/super_admin_dashboard/plasmic.module.css",
+      "components": [
+        {
+          "id": "coHBJsslNByC",
+          "name": "DashboardPage",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicDashboardPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/Dashboard.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicDashboardPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/Dashboard"
+        },
+        {
+          "id": "aG693ljhigII",
+          "name": "PageLayout",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicPageLayout.tsx",
+          "importSpec": {
+            "modulePath": "PageLayout.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicPageLayout.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "EdBZbn-IoTUV",
+          "name": "Card",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicCard.tsx",
+          "importSpec": {
+            "modulePath": "Card.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicCard.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "l9aj5pWQjv7Z",
+          "name": "Satistic",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicSatistic.tsx",
+          "importSpec": {
+            "modulePath": "Satistic.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicSatistic.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "UqW26cv720DQ",
+          "name": "MachineTypesPage",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicMachineTypesPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/machine-types.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicMachineTypesPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/machine-types"
+        },
+        {
+          "id": "Gm8PiynKwc-M",
+          "name": "MachinesCategoriesPage",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicMachinesCategoriesPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/machines-categories.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicMachinesCategoriesPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/machines-categories"
+        },
+        {
+          "id": "B_22a0ZpxEGl",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "fnfdsio9HzJu",
+          "name": "LoginForm",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicLoginForm.tsx",
+          "importSpec": {
+            "modulePath": "LoginForm.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicLoginForm.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "TFo_D-cEkGNF",
+          "name": "LoginPage",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicLoginPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/login-page.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicLoginPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/login-page"
+        },
+        {
+          "id": "jAXJOeEa5g6J",
+          "name": "LoginErrorPage",
+          "type": "managed",
+          "projectId": "5Wyypaj28HpFwgqusnxkCW",
+          "renderModuleFilePath": "plasmic/super_admin_dashboard/PlasmicLoginErrorPage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/login-error-page.tsx"
+          },
+          "cssFilePath": "plasmic/super_admin_dashboard/PlasmicLoginErrorPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/login-error-page"
+        }
+      ],
+      "icons": [
+        {
+          "id": "YdM3wmahHV_n",
+          "name": "CheckSvgIcon",
+          "moduleFilePath": "plasmic/super_admin_dashboard/icons/PlasmicIcon__CheckSvg.tsx"
+        },
+        {
+          "id": "d4JfcPdBvm6f",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/super_admin_dashboard/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "zNPk2w6cdzkE",
+          "name": "NotificationBellSvgrepoComSvgIcon",
+          "moduleFilePath": "plasmic/super_admin_dashboard/icons/PlasmicIcon__NotificationBellSvgrepoComSvg.tsx"
+        }
+      ],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "plasmic/super_admin_dashboard/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "5q5hQVeq8tYO",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "vQhoI8ScyAgA",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
       "customFunctions": []
     }
   ],
@@ -772,6 +1008,12 @@
         "name": "Screen",
         "projectId": "ugM6rmprqae5FXqemuYpLm",
         "contextFilePath": "plasmic/applicant_tracking_system/PlasmicGlobalVariant__Screen.tsx"
+      },
+      {
+        "id": "VC-mujqdN-H7",
+        "name": "Screen",
+        "projectId": "5Wyypaj28HpFwgqusnxkCW",
+        "contextFilePath": "plasmic/super_admin_dashboard/PlasmicGlobalVariant__Screen.tsx"
       }
     ]
   },
